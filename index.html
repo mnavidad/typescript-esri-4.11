@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>ArcGIS API for JavaScript Widgets</title>
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    /*Custom theme*/
+    .demo-theme .esri-widget,
+    .demo-theme .esri-widget-button,
+    .demo-theme .esri-menu,
+    .demo-theme .esri-popup__main-container,
+    .demo-theme .esri-popup .esri-pointer-direction,
+    .demo-theme .esri-button {
+        color: #DD8888;
+        background-color: #000;
+    }
+
+    .demo-theme .esri-widget-button:focus,
+    .demo-theme .esri-widget-button:hover,
+    .demo-theme .esri-menu li:focus,
+    .demo-theme .esri-menu li:hover {
+        color: #DD8888;
+        background-color: #454545;
+    }
+
+    .demo-theme .esri-button:focus,
+    .demo-theme .esri-button:hover {
+        color: #DD8888;
+    }
+  </style>
+  <link rel="stylesheet" href="https://js.arcgis.com/4.3/esri/css/main.css">
+  <script src="https://js.arcgis.com/4.3/"></script>
+  <script src="main.js"></script>
+</head>
+<body class="demo-theme">
+  <div id="viewDiv"></div>
+</body>
+</html>

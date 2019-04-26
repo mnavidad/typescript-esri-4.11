@@ -1,0 +1,21 @@
+{
+    "name": "TypeScriptEsri4.11",
+    "version": "1.0.0",
+    "description": "This is the typescript version for 4.11 esri js",
+    "main": "index.html",
+    "scripts": {
+      "start": "npm run lite",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "lite": "lite-server"
+    },
+    "keywords": [],
+    "author": "Michelle Christmas",
+    "license": "ISC",
+    "dependencies": {
+      "@types/arcgis-js-api": "^4.11.0"
+    },
+    "devDependencies": {
+      "dojo-typings": "^1.11.9",
+      "lite-server": "^2.4.0"
+    }
+  }
