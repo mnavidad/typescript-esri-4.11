@@ -1,17 +1,16 @@
-import EsriMap from "esri/Map";
-import VectorTileLayer from "esri/VectorTileLayer";
-import VectorTileLayer from "esri/layers/VectorTileLayer";
-import FeatureLayer from  "esri/layers/FeatureLayer";
-import PopupTemplate from    "esri/PopupTemplate"; 
-import MapView from   "esri/views/MapView";
-import Expand from  "esri/widgets/Expand";
-import Search from  "esri/widgets/Search";
-import Legend from  "esri/widgets/Legend";
-import Home from  "esri/widgets/Home";
-import Locate from  "esri/widgets/Locate";
-import BasemapToggle  from  "esri/widgets/BasemapToggle";
-import Print  from  "esri/widgets/Print";
-import LayerList from  "esri/widgets/LayerList";
+import * as EsriMap from "esri/Map";
+import * as VectorTileLayer from "esri/layers/VectorTileLayer";
+import * as FeatureLayer from  "esri/layers/FeatureLayer";
+import * as PopupTemplate from    "esri/PopupTemplate"; 
+import * as MapView from   "esri/views/MapView";
+import * as Expand from  "esri/widgets/Expand";
+import * as Search from  "esri/widgets/Search";
+import * as Legend from  "esri/widgets/Legend";
+import * as Home from  "esri/widgets/Home";
+import * as Locate from  "esri/widgets/Locate";
+import * as BasemapToggle  from  "esri/widgets/BasemapToggle";
+import * as Print  from  "esri/widgets/Print";
+import * as LayerList from  "esri/widgets/LayerList";
 
 const fLayer = new FeatureLayer({
     url: "http://services.arcgis.com/p3UBboyC0NH1uCie/arcgis/rest/services/LA_Crime_WebMap/FeatureServer/0",
@@ -81,25 +80,25 @@ fLayer.popupTemplate = template;
 
     const lgndExpand = new Expand({
         view: view,
-        content: legend.domNode,
+        content: legend,
         expandIconClass: "esri-icon-layers"
     });
 
     const searchExpand = new Expand({
         view: view,
-        content: searchWidget.domNode,
+        content: searchWidget,
         expandIconClass: "esri-icon-search"
     });
 
     const printExpand = new Expand({
         view: view,
-        content: print.domNode,
+        content: print,
         expandIconClass: "esri-icon-printer"
     });
 
     const listExpand = new Expand({
         view: view,
-        content: layerList.domNode,
+        content: layerList,
         expandIconClass: "esri-icon-layer-list"
     });
 

@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+    
   },
   "keywords": [],
   "author": "",
@@ -13,6 +16,7 @@
     "@types/arcgis-js-api": "^4.11.0"
   },
   "devDependencies": {
-    "dojo-typings": "^1.11.9"
+    "dojo-typings": "^1.11.9",
+    "lite-server": "^2.4.0"
   }
 }
